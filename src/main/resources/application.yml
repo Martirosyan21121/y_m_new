@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/year_project?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password: root2000
+    url: jdbc:mysql://dpg-ch1stt5gk4qarqmc8670-a.oregon-postgres.render.com:3306/year_project?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: year_month_user
+    password: WBvvI9ltuyAkjiVOBqSLfxVsFWGSSbw7
   jpa:
     hibernate:
       ddl-auto: update
