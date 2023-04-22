@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+<form action="/save" method="post">
+    <input type="number" name="year">
+    <br>
+    <select name="nameOfMonth">
+        <option value="January">1</option>
+        <option value="February">2</option>
+        <option value="March">3</option>
+        <option value="April">4</option>
+        <option value="May">5</option>
+        <option value="June">6</option>
+        <option value="July">7</option>
+        <option value="August">8</option>
+        <option value="September">9</option>
+        <option value="October">10</option>
+        <option value="November">11</option>
+        <option value="December">12</option>
+    </select>
+    <input type="submit" value="add">
+</form>
+<br>
+<table border="3">
+    <tr>
+        <th>Name of month</th>
+        <th>Year</th>
+        <th>Days</th>
+    </tr>
+
+    <tr th:each="days : ${monthYears}">
+        <td th:text="${days.nameOfMonth}"></td>
+        <td th:text="${days.year}"></td>
+        <td th:text="${days.days}"></td>
+    </tr>
+</table>
+</body>
+</html>
